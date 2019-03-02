@@ -1,0 +1,221 @@
+@font-face {
+ font-family: "anarion";
+ font-style:  normal;
+ font-weight: normal;
+ src: url("./font/anicb___.ttf");
+}
+@font-face {
+ font-family: "anarion";
+ font-style: normal;
+ font-weight: bold;
+ src: url("./font/anirb___.ttf") ;
+}
+@font-face {
+ font-family: "tengwar";
+ font-style: normal;
+ font-weight: normal;
+ src: url("./font/tngan.ttf") ;
+}
+@font-face {
+ font-family: "tengwar";
+ font-style: normal;
+ font-weight: bold;
+ src: url("./font/tngan.ttf") ;
+}
+@font-face {
+ font-family: "tengwar";
+ font-style: italic;
+ font-weight: normal;
+ src: url("./font/tngani.ttf") ;
+}
+@font-face {
+ font-family: "tengwar";
+ font-style: italic;
+ font-weight: bold;
+ src: url("./font/tnganbi.ttf") ;
+}
+@font-face {
+ font-family: "partybusiness";
+ font-style:  normal;
+ font-weight: normal;
+ src: url("./font/partybusiness.ttf") ;
+}
+
+/* --- body --- */
+
+body{
+  font-family: partybusiness;
+  font-size: 1.3rem;
+}
+h2,h3,h4,h5,table{
+  font-family: anarion;
+}
+h2{
+  font-size: 1.6rem;
+}
+.container-fluid{
+  background-image: url("./integration_maquette_finale/bg_light.png");
+}
+#navHeader .navbar{
+  background-color: #FF5C06;
+  font-family: anarion;
+  font-size: 1rem;
+}
+#navHeader .nav-link{
+  color: white;
+}
+#navHeader  .nav-link:after {
+    content: "|";
+    top: 16px;
+    margin-left: 10px;
+}
+#carouselheader h1{
+  font-size: 4rem;
+}
+.carousel-caption {
+  top: 42%;
+}
+.card-img-top {
+  object-fit: cover;
+  opacity: 0.7;
+  padding: 5px;
+}
+#fellows .nav{
+  font-family: anarion;
+}
+h2:before, h2:after{
+  content: "ij";
+  color: #FF5C06;
+  font-family: tengwar;
+  font-style: italic;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#fellows span{
+  font-size: 1rem;
+}
+#fellows .active{
+  padding-bottom: 15px;
+  border-bottom: 1px solid #FF5C06;
+  color: #FF5C06;
+}
+#fellows .active:before, #fellows .active:after{
+  content: "b";
+  font-family: tengwar;
+  font-style: italic;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#wanted{
+  font-size: 1.5rem;
+}
+#wanted span {
+  color : #FF5C06;
+  font-size: 2rem;
+}
+.gimlideath{
+  text-decoration: #FF5C06 line-through;
+}
+.card-img-overlay > .card-text{
+  background-color: rgba(255, 255, 255, 0.78);
+  border-radius: 5px;
+  box-shadow: 1px 1px 12px white;
+  font-size: 2rem;
+}
+.card-img-overlay > .card-title {
+  font-size: 4rem;
+}
+#captured{
+  background-image: url("./integration_maquette_finale/bg_dark.png");
+}
+#captured .card-title{
+  font-family: anarion ;
+}
+#captured .btn{
+  color: #FF5C06;
+}
+#aboutTheRing{
+  background-image: url("./integration_maquette_finale/bg_dark.png");
+  color: white;
+}
+#aboutTheRing h4{
+  background-color: #FF5C06;
+  font-size: 1.3rem;
+}
+#aboutTheRing td{
+  font-size: 1rem;
+  color: rgb(117, 117, 117);
+}
+#aboutTheRing .card-body{
+  background-color: rgba(239, 239, 239, 0.82);
+}
+table {
+   margin: auto;
+   width: 80% !important;
+}
+#aboutTheRing blockquote{
+  font-size: 2rem;
+}
+#hunters h5{
+  color: #FF5C06;
+}
+#hunters .btn{
+  color: #FF5C06;
+  text-decoration: none;
+}
+#hunters .bnt:before{
+
+}
+#hunters a{
+  color: black;
+  text-decoration: underline;
+}
+#hunters .media{
+  display: block;
+}
+#army .btn{
+  color: #FF5C06;
+  font-family: anarion;
+}
+#contactUs{
+  background-image: url("./integration_maquette_finale/bg_dark.png");
+  color: white;
+}
+#contactUs form{
+  font-family: anarion;
+  font-size: 0.5rem;
+}
+form{
+  margin: auto;
+}
+footer a {
+  color: white;
+}
+footer > .row{
+  background-color: #FF5C06;
+  font-family: anarion;
+  font-size: 1rem;
+}
+/* ---- HOVER ---- */
+
+.card:hover img {
+  opacity: 1;
+  transition: 0.5s;
+}
+.gandalf:hover .card-img-overlay > .card-title {
+  padding-top: 40%;
+  transition: 0.5s;
+}
+.gandalf:hover .card-img-overlay > .card-text {
+  visibility: hidden;
+}
+.gimli:hover .card-img-overlay > .card-title {
+  visibility: hidden;
+}
+.aragorn:hover .card-img-overlay > .card-title {
+  padding-top: 40%;
+  transition: 0.5s;
+}
+.aragorn:hover .card-text {
+  visibility: hidden;
+}
