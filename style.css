@@ -56,18 +56,15 @@ h2{
 .container-fluid{
   background-image: url("./integration_maquette_finale/bg_light.png");
 }
-#navHeader .navbar{
+.navColor{
   background-color: #FF5C06;
+}
+#navbarNav{
   font-family: anarion;
   font-size: 1rem;
 }
-#navHeader .nav-link{
+#navbarNav .nav-link{
   color: white;
-}
-#navHeader  .nav-link:after {
-    content: "|";
-    top: 16px;
-    margin-left: 10px;
 }
 #carouselheader h1{
   font-size: 4rem;
@@ -191,7 +188,7 @@ form{
 footer a {
   color: white;
 }
-footer > .row{
+footer > .row,.footer-bottom{
   background-color: #FF5C06;
   font-family: anarion;
   font-size: 1rem;
