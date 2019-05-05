@@ -1,0 +1,23 @@
+@mixin ring ($size, $color) {
+  background-color: transparent;
+  border: $size/10 solid $color;
+  border-radius: 50%;
+  box-shadow: $size/20 $size/20 $size/20 darken($color,10%);
+  width: $size;
+  height: $size;
+}
+
+.littleOrangeRing {
+    @include ring(30px, orange);
+}
+
+.bigYellowRing {
+  @include ring(100px, yellow)
+}
+
+@for $i from 1 through 6 {
+  .basicRing-#{$i} {
+    @include ring(20px*$i, grey);
+    margin-right: -10px*$i;
+  }
+}
